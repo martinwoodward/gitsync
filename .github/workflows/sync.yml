@@ -14,5 +14,5 @@ jobs:
         echo Last Commit
         git log -1
         echo Force push to server
-        git push --force --repo https://${{ secrets.PAT_USERNAME }}:${{ secrets.PAT_PASSWORD }}@dev.azure.com/martinwoodward/mirrored/_git/mirrored HEAD:master --follow-tags
+        git push --force --repo https://${{ secrets.PAT_USERNAME }}:${{ secrets.PAT_PASSWORD }}@dev.azure.com/martinwoodward/mirrored/_git/mirrored --follow-tags
         
