@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Push to remote repo
       run: |
-        git push --mirror --force-with-lease --repo https://${{ secrets.PAT_USERNAME }}:${{ secrets.PAT_PASSWORD }}@dev.azure.com/martinwoodward/mirrored/_git/mirrored
+        git push --mirror --force --repo https://${{ secrets.PAT_USERNAME }}:${{ secrets.PAT_PASSWORD }}@dev.azure.com/martinwoodward/mirrored/_git/mirrored
         
